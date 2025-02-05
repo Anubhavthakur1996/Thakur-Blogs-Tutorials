@@ -1,50 +1,89 @@
-# React + TypeScript + Vite
+<p align="center">
+  <a href="" rel="noopener">
+ <img width=200px height=200px src="src/assets/BlogsLogo.png" alt="Project logo"></a>
+</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h3 align="center">Thakur Anubhav Singh's Blogs & Tutorials</h3>
 
-Currently, two official plugins are available:
+<div align="center">
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
-## Expanding the ESLint configuration
+</div>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+<p align="center"> A simple web application to publish my blogs and tuorials or anything that could be useful to others.
+    <br> 
+</p>
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📝 Table of Contents
+
+- [About](#about)
+- [Logic](#logic)
+- [Getting Started](#getting_started)
+- [Built Using](#built_using)
+- [Authors](#authors)
+- [Acknowledgments](#acknowledgement)
+
+## 🧐 About <a name = "about"></a>
+
+Someone I know asked me to teach him about computer and possibly programming. Since, I started teaching him, I realised not all people are familiar with computers and technology as the modern generation or people from tech industry are. Thus, I decided to make this app to publish tutorials and guides for him and people like him.
+
+## 🧐 Logic <a name = "logic"></a>
+
+## 🏁 Getting Started <a name = "getting_started"></a>
+
+For now it'll be a simple sigle page app with basic navigation and articles. 
+
+### Prerequisites
+
+1. react: ^18.3.1
+2. react-dom: ^18.3.1
+3. sass: ^1.83.4
+4. typescript: ~5.6.2
+5. vite: ^6.0.5
+
+```
+Example placeholder
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Installing
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Clone the project from Github.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+Follow the following commands:
+
 ```
+Yarn
+```
+
+For development
+
+```
+Yarn dev
+```
+
+For deployement
+
+```
+Yarn build
+```
+
+## 🚀 Deployment <a name = "deployment"></a>
+
+Additional notes on live deployment.
+
+## ⛏️ Built Using <a name = "built_using"></a>
+
+- [React](https://www.react.dev/) - Library
+
+## ✍️ Authors <a name = "authors"></a>
+
+- [@anubhavthakur1996](https://github.com/Anubhavthakur1996) - Idea & Initial work
+
+## 🎉 Acknowledgements <a name = "acknowledgement"></a>
+
+- People who's work I used (if any, maybe in future if I do)
+- Inspiration
+- References
