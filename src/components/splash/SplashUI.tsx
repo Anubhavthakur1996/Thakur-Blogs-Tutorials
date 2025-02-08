@@ -4,7 +4,7 @@ type SplashProps = {
 
 const SplashUI: React.FC<SplashProps> = ({ Logo }): JSX.Element => (
   <div className="flex justify-center items-center h-screen">
-    <img src={Logo} className="animate-wiggle h-[20vw]" />
+    <img src={Logo} className="animate-wiggle 2xl:h-[20vw] h-[20vh]" />
   </div>
 );
 

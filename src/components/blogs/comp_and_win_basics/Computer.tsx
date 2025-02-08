@@ -1,11 +1,28 @@
-import { Typography, Image } from "antd";
+import { useNavigate } from "react-router";
+import { Typography, Image, Button } from "antd";
 import ComComps from "../../../assets/Computer Comps.png";
 import Hardware from "../../../assets/hardware.jpg";
 import Software from "../../../assets/software.png";
+import Footer from "../../common/Footer";
 
 const Computer: React.FC = (): JSX.Element => {
+  const nav = useNavigate();
+
+  const nextPage = () => {
+    return (
+      <Button type="primary" onClick={() => nav("/os")}>
+        Next - Operating Sytem
+      </Button>
+    );
+  };
+
+  const props = {
+    prev: null,
+    next: nextPage,
+  };
+
   return (
-    <div className="max-w-screen min-h-screen max-h-max px-[25vw] py-[10vw]">
+    <div className="max-w-screen min-h-screen max-h-max 2xl:px-[25vw] px-[5vw] py-[10vw] overflow-y-auto">
       {/* Tutorial Title */}
       <Typography.Title code className="flex justify-center">
         <span className="text-typography">
@@ -38,8 +55,15 @@ const Computer: React.FC = (): JSX.Element => {
         <br />
         <br />
         {/* Computer Image */}
-        <div className="flex justify-center">
-          <Image src={ComComps} alt="Computer Components" width={"55vw"} />
+        <div className="flex flex-col justify-center">
+          <Image src={ComComps} alt="Computer Components" width={"45vw"} />
+          <Typography.Title level={4}>
+            <span className="text-typography font-playwrite">Figure:</span>
+            &nbsp;&nbsp;
+            <span className="text-typography">
+              Computer's two essential components, hardware and software
+            </span>
+          </Typography.Title>
         </div>
         <br />
         <br />
@@ -91,8 +115,15 @@ const Computer: React.FC = (): JSX.Element => {
         <br />
         <br />
         {/* Hardware Image */}
-        <div className="flex justify-center">
-          <Image src={Hardware} alt="Computer Hardware" width={"55vw"} />
+        <div className="flex flex-col justify-center">
+          <Image src={Hardware} alt="Computer Hardware" width={"45vw"} />
+          <Typography.Title level={4}>
+            <span className="text-typography font-playwrite">Figure:</span>
+            &nbsp;&nbsp;
+            <span className="text-typography">
+              Some examples of computer hardware
+            </span>
+          </Typography.Title>
         </div>
         <br />
         <br />
@@ -126,14 +157,22 @@ const Computer: React.FC = (): JSX.Element => {
         <br />
         <br />
         {/* Software Image */}
-        <div className="flex justify-center">
-          <Image src={Software} alt="Computer Software" width={"55vw"} />
+        <div className="flex flex-col justify-center">
+          <Image src={Software} alt="Computer Software" width={"45vw"} />
+          <Typography.Title level={4}>
+            <span className="text-typography font-playwrite">Figure:</span>
+            &nbsp;&nbsp;
+            <span className="text-typography">
+              Some examples of computer software
+            </span>
+          </Typography.Title>
         </div>
-        {/* <br />
         <br />
         <br />
-        <br /> */}
+        <br />
+        <br />
       </Typography.Paragraph>
+      <Footer {...props} />
     </div>
   );
 };
