@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://anubhavthakur1996.github.io/thakur-blogs-tutorials",
+  "homepage": "https://anubhavthakur1996.github.io/Thakur-Blogs-Tutorials",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
