@@ -1,12 +1,31 @@
 @import "tailwindcss";
 @import "./themes/dark.css";
 @import "./themes/light.css";
+@import "@fontsource-variable/playwrite-cu";
+@import "@fontsource/playwrite-at-guides";
+@import "@fontsource-variable/playwrite-za";
 
 @theme {
+  /* Colours */
   --color-primary: #fff3b0;
   --color-secondary: #fffbe3;
-  /* --color-primary: #9381ff;
-  --color-secondary: #b8b8ff; */
   --color-buttons: #fbbc05;
   --color-typography: #000;
+
+  /* Fonts */
+  --font-playwrite: "Playwrite CU Variable", cursive;
+  --font-playwriteAT: "Playwrite AT Guides", cursive;
+  --font-playwriteZA: "Playwrite ZA Variable", cursive;
+
+  /* Animations */
+  --animate-wiggle: wiggle 1s ease-in-out infinite;
+  @keyframes wiggle {
+    0%,
+    100% {
+      transform: rotate(-3deg);
+    }
+    50% {
+      transform: rotate(3deg);
+    }
+  }
 }

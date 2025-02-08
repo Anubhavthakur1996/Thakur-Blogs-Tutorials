@@ -1,6 +1,6 @@
 html[data-theme="light"] {
-  --color-primary: #f6f8fa;
-  --color-secondary: #ffffff;
+  --color-primary: #fff3b0;
+  --color-secondary: #fffbe3;
   --color-buttons: #de7a22;
   --color-typography: #fffffff;
 }

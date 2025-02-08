@@ -11,7 +11,7 @@ function App() {
   }
 
   return (
-    <div className="bg-primary flex justify-center items-center h-screen w-screen">
+    <div className="bg-primary flex justify-center items-center h-max max-w-screen">
       <Routes />
     </div>
   );
