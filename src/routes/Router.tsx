@@ -7,10 +7,10 @@ import Computer from "../components/blogs/comp_and_win_basics";
 const Router: React.FC = (): JSX.Element => {
   return (
     <Routes>
-      <Route path="/Thakur-Blogs-Tutorials" element={<Splash />} />
+      <Route path="Thakur-Blogs-Tutorials" element={<Splash />} />
       <Route element={<Toggle />}>
-        <Route path="/home" element={<Home />} />
-        <Route path="/Computer" element={<Computer />} />
+        <Route path="home" element={<Home />} />
+        <Route path="Computer" element={<Computer />} />
       </Route>
     </Routes>
   );
