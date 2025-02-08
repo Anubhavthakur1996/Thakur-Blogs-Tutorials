@@ -20,7 +20,6 @@
 ## 📝 Table of Contents
 
 - [About](#about)
-- [Logic](#logic)
 - [Getting Started](#getting_started)
 - [Built Using](#built_using)
 - [Authors](#authors)
@@ -30,11 +29,9 @@
 
 Someone I know asked me to teach him about computer and possibly programming. Since, I started teaching him, I realised not all people are familiar with computers and technology as the modern generation or people from tech industry are. Thus, I decided to make this app to publish tutorials and guides for him and people like him.
 
-## 🧐 Logic <a name = "logic"></a>
-
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
-For now it'll be a simple sigle page app with basic navigation and articles. 
+For now it'll be a simple sigle page app with basic navigation and articles.
 
 ### Prerequisites
 
@@ -77,6 +74,11 @@ Additional notes on live deployment.
 ## ⛏️ Built Using <a name = "built_using"></a>
 
 - [React](https://www.react.dev/) - Library
+- [Vite](https://vite.dev/) - Packager
+- [SWC](https://swc.rs/) - Compiler
+- [Type Script](https://www.typescriptlang.org/) - Library
+- [Tailwind CSS](https://tailwindcss.com/) - CSS Framework
+- [React Router](https://reactrouter.com/) - Router
 
 ## ✍️ Authors <a name = "authors"></a>
 
