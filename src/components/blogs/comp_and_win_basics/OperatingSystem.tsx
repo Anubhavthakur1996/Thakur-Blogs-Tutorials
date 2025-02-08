@@ -1,8 +1,6 @@
 import { useNavigate } from "react-router";
 import { Typography, Image, Button } from "antd";
 import OS from "../../../assets/os.png";
-import Hardware from "../../../assets/hardware.jpg";
-import Software from "../../../assets/software.png";
 import Footer from "../../common/Footer";
 
 const OperatingSystem: React.FC = (): JSX.Element => {
