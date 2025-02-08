@@ -5,7 +5,7 @@ import Software from "../../../assets/software.png";
 
 const Computer: React.FC = (): JSX.Element => {
   return (
-    <div className="max-w-screen min-h-screen max-h-max p-10">
+    <div className="max-w-screen min-h-screen max-h-max px-90">
       {/* Tutorial Title */}
       <Typography.Title code className="flex justify-center">
         <span className="text-typography">
