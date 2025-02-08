@@ -9,7 +9,7 @@ const Footer: React.FC<FooterProps> = ({ prev, next }): JSX.Element => {
   return (
     <div className="flex justify-between align-middle">
       {prev ? prev() : <Button className="invisible">{null}</Button>}
-      {next && next()}
+      {next ? next() : <Button className="invisible">{null}</Button>}
     </div>
   );
 };

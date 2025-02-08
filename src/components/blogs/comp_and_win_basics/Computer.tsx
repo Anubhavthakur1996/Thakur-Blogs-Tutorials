@@ -167,10 +167,6 @@ const Computer: React.FC = (): JSX.Element => {
             </span>
           </Typography.Title>
         </div>
-        <br />
-        <br />
-        <br />
-        <br />
       </Typography.Paragraph>
       <Footer {...props} />
     </div>
