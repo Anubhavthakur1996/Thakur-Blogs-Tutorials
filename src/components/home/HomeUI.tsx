@@ -7,7 +7,7 @@ type HomeUIProps = {
 
 const HomeUI: React.FC<HomeUIProps> = ({ goTo, Logo }): JSX.Element => (
   <div className="flex flex-col justify-center items-center h-screen">
-    <img src={Logo} className="animate-bounce h-96" />
+    <img src={Logo} className="animate-bounce h-[20vw]" />
     <Typography.Title>
       <span className="text-typography">List of Blogs & Tutorials:</span>
     </Typography.Title>
