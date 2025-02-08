@@ -147,6 +147,16 @@ const OperatingSystem: React.FC = (): JSX.Element => {
         </Typography.Title>
         <br />
         <br />
+
+        <Typography.Link
+          target="_blank"
+          href="https://www.geeksforgeeks.org/types-of-operating-systems/"
+        >
+          Read about operating systems in more details
+        </Typography.Link>
+
+        <br />
+        <br />
       </Typography.Paragraph>
       <Footer {...props} />
     </div>
