@@ -5,6 +5,8 @@ import Home from "../components/home";
 import Toggle from "../components/common/Toggle";
 import Computer from "../components/blogs/comp_and_win_basics";
 import OperatingSystem from "../components/blogs/comp_and_win_basics/OperatingSystem";
+import Windows from "../components/blogs/comp_and_win_basics/Windows";
+import UI from "../components/blogs/comp_and_win_basics/UI";
 
 import { ReactNode } from "react";
 
@@ -28,6 +30,8 @@ const Router: React.FC = (): JSX.Element => {
           <Route path="home" element={<Home />} />
           <Route path="Computer" element={<Computer />} />
           <Route path="OS" element={<OperatingSystem />} />
+          <Route path="ui" element={<UI />} />
+          <Route path="windows" element={<Windows />} />
         </Route>
       </Routes>
     </Wrapper>

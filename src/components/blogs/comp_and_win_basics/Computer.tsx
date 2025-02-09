@@ -44,21 +44,21 @@ const Computer: React.FC = (): JSX.Element => {
         <Typography.Title keyboard level={4}>
           <span className="text-typography ">
             Any device with computational capabilities and which consists of{" "}
-            <span className="font-playwrite">hardware</span> and{" "}
-            <span className="font-playwrite">software</span> components.
-            Examples include smartphones, laptops, desktops, tablets, and many
-            more day-to-day devices.
+            <span className="font-playwrite text-base">hardware</span> and{" "}
+            <span className="font-playwrite text-base">software</span>{" "}
+            components. Examples include smartphones, laptops, desktops,
+            tablets, and many more day-to-day devices.
           </span>
         </Typography.Title>
-        <br />
-        <br />
         <br />
         <br />
         {/* Computer Image */}
         <div className="flex flex-col justify-center">
           <Image src={ComComps} alt="Computer Components" width={"45vw"} />
           <Typography.Title level={4}>
-            <span className="text-typography font-playwrite">Figure:</span>
+            <span className="text-typography font-playwrite text-lg">
+              Figure:
+            </span>
             &nbsp;&nbsp;
             <span className="text-typography">
               Computer's two essential components, hardware and software
@@ -75,10 +75,10 @@ const Computer: React.FC = (): JSX.Element => {
             We touched upon two crucial components of a computer and those were:
             <ol>
               <li>
-                <span className="font-playwrite">Hardware</span>
+                <span className="font-playwrite text-lg">Hardware</span>
               </li>
               <li>
-                <span className="font-playwrite">Software</span>
+                <span className="font-playwrite text-lg">Software</span>
               </li>
             </ol>
           </span>
@@ -112,13 +112,13 @@ const Computer: React.FC = (): JSX.Element => {
         </Typography.Title>
         <br />
         <br />
-        <br />
-        <br />
         {/* Hardware Image */}
         <div className="flex flex-col justify-center">
           <Image src={Hardware} alt="Computer Hardware" width={"45vw"} />
           <Typography.Title level={4}>
-            <span className="text-typography font-playwrite">Figure:</span>
+            <span className="text-typography font-playwrite text-lg">
+              Figure:
+            </span>
             &nbsp;&nbsp;
             <span className="text-typography">
               Some examples of computer hardware
@@ -154,19 +154,30 @@ const Computer: React.FC = (): JSX.Element => {
         </Typography.Title>
         <br />
         <br />
-        <br />
-        <br />
         {/* Software Image */}
         <div className="flex flex-col justify-center">
           <Image src={Software} alt="Computer Software" width={"45vw"} />
           <Typography.Title level={4}>
-            <span className="text-typography font-playwrite">Figure:</span>
+            <span className="text-typography font-playwrite text-lg">
+              Figure:
+            </span>
             &nbsp;&nbsp;
             <span className="text-typography">
               Some examples of computer software
             </span>
           </Typography.Title>
         </div>
+        <br />
+        <br />
+        {/* What's next? */}
+        <Typography.Title keyboard level={4}>
+          <span className="text-typography">
+            Next, we will discuss one such software called an operating system.
+            It's one of the most crucial pieces of software out there and one
+            that I am sure all of you have already come in contact with. That is
+            all for this page, let's meet on the next one.
+          </span>
+        </Typography.Title>
       </Typography.Paragraph>
       <Footer {...props} />
     </div>

@@ -8,8 +8,8 @@ const OperatingSystem: React.FC = (): JSX.Element => {
 
   const nextPage = () => {
     return (
-      <Button type="primary" onClick={() => nav("/os")}>
-        Next - Operating Sytem
+      <Button type="primary" onClick={() => nav("/ui")}>
+        Next - User Interface
       </Button>
     );
   };
@@ -67,13 +67,13 @@ const OperatingSystem: React.FC = (): JSX.Element => {
         </Typography.Title>
         <br />
         <br />
-        <br />
-        <br />
         {/* Computer Image */}
         <div className="flex flex-col justify-center">
           <Image src={OS} alt="Operating Systems" width={"45vw"} />
           <Typography.Title level={4}>
-            <span className="text-typography font-playwrite">Figure:</span>
+            <span className="text-typography font-playwrite text-lg">
+              Figure:
+            </span>
             &nbsp;&nbsp;
             <span className="text-typography">
               Some popular operating systems
@@ -90,33 +90,37 @@ const OperatingSystem: React.FC = (): JSX.Element => {
             There are many types of operating systems:
             <ol>
               <li>
-                <span className="font-playwrite">Batch OS</span>
+                <span className="font-playwrite text-base">Batch OS</span>
               </li>
               <li>
-                <span className="font-playwrite">Multi-programming OS</span>
+                <span className="font-playwrite text-base">
+                  Multi-programming OS
+                </span>
               </li>
               <li>
-                <span className="font-playwrite">
+                <span className="font-playwrite text-base">
                   Multi-tasking/Time sharing OS
                 </span>
               </li>
               <li>
-                <span className="font-playwrite">Multi-processing OS</span>
+                <span className="font-playwrite text-base">
+                  Multi-processing OS
+                </span>
               </li>
               <li>
-                <span className="font-playwrite">Multi-user OS</span>
+                <span className="font-playwrite text-base">Multi-user OS</span>
               </li>
               <li>
-                <span className="font-playwrite">Distributed OS</span>
+                <span className="font-playwrite text-base">Distributed OS</span>
               </li>
               <li>
-                <span className="font-playwrite">Network OS</span>
+                <span className="font-playwrite text-base">Network OS</span>
               </li>
               <li>
-                <span className="font-playwrite">Real time OS</span>
+                <span className="font-playwrite text-base">Real time OS</span>
               </li>
               <li>
-                <span className="font-playwrite">Mobile OS</span>
+                <span className="font-playwrite text-base">Mobile OS</span>
               </li>
             </ol>
           </span>
@@ -128,7 +132,7 @@ const OperatingSystem: React.FC = (): JSX.Element => {
         {/* Hardware */}
         <Typography.Title keyboard level={4}>
           <span className="text-typography">
-            Modern non-network OSs are usually a hybrid combination of
+            Modern operating systems are usually a hybrid combination of
             multi-programming, multitasking, multi-processing, and multi-user
             operating systems. It can be inferred because modern operating
             systems like Windows or Mac have capabilities of the aforementioned
@@ -145,6 +149,7 @@ const OperatingSystem: React.FC = (): JSX.Element => {
             walk the path of modern tech and development.
           </span>
         </Typography.Title>
+
         <br />
         <br />
 
