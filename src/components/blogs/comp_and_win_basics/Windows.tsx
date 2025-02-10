@@ -87,7 +87,7 @@ const Windows: React.FC = (): JSX.Element => {
               <li>
                 <span className="font-playwrite text-base">File explorer</span>
                 <ul>
-                  <li className="font-playwrite text-base">Structure</li>
+                  {/* <li className="font-playwrite text-base">Structure</li> */}
                   <li className="font-playwrite text-base">Address bar</li>
                   <li className="font-playwrite text-base">Navigation pane</li>
                 </ul>
