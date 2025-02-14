@@ -38,7 +38,7 @@ const Computer: React.FC = (): JSX.Element => {
         <iframe
           width="560"
           height="315"
-          src="https://www.youtube.com/embed/D6WTXmV9N1g?si=J2B0ev6PY_XxU61Z"
+          src="https://www.youtube.com/embed/iH_TCGz1bdA?si=9Ufc20h24AeV0eoX"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerPolicy="strict-origin-when-cross-origin"
