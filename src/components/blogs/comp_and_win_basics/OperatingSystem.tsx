@@ -39,6 +39,20 @@ const OperatingSystem: React.FC = (): JSX.Element => {
       <br />
       <br />
       <br />
+      {/* Video Summary */}
+      <div className="flex justify-center items-center">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/rPO1k-2tA60?si=jmb51CHI-vfbqXNQ"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        />
+      </div>
+      <br />
+      <br />
       {/* Operating System */}
       <Typography.Title level={3}>
         <span className="text-typography font-playwriteZA">
