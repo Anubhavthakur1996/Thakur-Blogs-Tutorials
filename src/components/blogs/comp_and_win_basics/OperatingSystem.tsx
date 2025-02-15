@@ -2,6 +2,7 @@ import { useNavigate } from "react-router";
 import { Typography, Image, Button } from "antd";
 import OS from "../../../assets/os.png";
 import Footer from "../../common/Footer";
+import VideoSection from "../../common/VideoSection";
 
 const OperatingSystem: React.FC = (): JSX.Element => {
   const nav = useNavigate();
@@ -40,7 +41,7 @@ const OperatingSystem: React.FC = (): JSX.Element => {
       <br />
       <br />
       {/* Video Summary */}
-      <div className="flex justify-center items-center">
+      <VideoSection>
         <iframe
           width="560"
           height="315"
@@ -50,9 +51,7 @@ const OperatingSystem: React.FC = (): JSX.Element => {
           referrerPolicy="strict-origin-when-cross-origin"
           allowFullScreen
         />
-      </div>
-      <br />
-      <br />
+      </VideoSection>
       {/* Operating System */}
       <Typography.Title level={3}>
         <span className="text-typography font-playwriteZA">

@@ -4,6 +4,7 @@ import ComComps from "../../../assets/Computer Comps.png";
 import Hardware from "../../../assets/hardware.jpg";
 import Software from "../../../assets/software.png";
 import Footer from "../../common/Footer";
+import VideoSection from "../../common/VideoSection";
 
 const Computer: React.FC = (): JSX.Element => {
   const nav = useNavigate();
@@ -34,7 +35,7 @@ const Computer: React.FC = (): JSX.Element => {
       <br />
       <br />
       {/* Video Summary */}
-      <div className="flex justify-center items-center">
+      <VideoSection>
         <iframe
           width="560"
           height="315"
@@ -44,10 +45,7 @@ const Computer: React.FC = (): JSX.Element => {
           referrerPolicy="strict-origin-when-cross-origin"
           allowFullScreen
         />
-      </div>
-
-      <br />
-      <br />
+      </VideoSection>
       {/* Computer */}
       <Typography.Title level={3}>
         <span className="text-typography font-playwriteZA">

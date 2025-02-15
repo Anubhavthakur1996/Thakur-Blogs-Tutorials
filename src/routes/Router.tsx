@@ -25,7 +25,7 @@ const Router: React.FC = (): JSX.Element => {
   return (
     <Wrapper>
       <Routes>
-        <Route path="Thakur-Blogs-Tutorials" element={<Splash />} />
+        <Route path="/" element={<Splash />} />
         <Route element={<Toggle />}>
           <Route path="home" element={<Home />} />
           <Route path="Computer" element={<Computer />} />
