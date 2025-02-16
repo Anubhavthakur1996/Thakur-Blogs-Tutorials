@@ -5,6 +5,13 @@ import Hardware from "../../../assets/hardware.jpg";
 import Software from "../../../assets/software.png";
 import Footer from "../../common/Footer";
 import VideoSection from "../../common/VideoSection";
+import TopicTitleSection from "../../common/TopicTitleSection";
+import QuestionSection from "../../common/QuestionSection";
+import AnswerSection from "../../common/AnswerSection";
+import TextHighlight from "../../common/TextHighlight";
+import ImageSection from "../../common/ImageSection";
+import LineBreaks from "../../common/LineBreaks";
+import ExampleSection from "../../common/ExampleSection";
 
 const Computer: React.FC = (): JSX.Element => {
   const nav = useNavigate();
@@ -25,15 +32,8 @@ const Computer: React.FC = (): JSX.Element => {
   return (
     <div className="max-w-screen min-h-screen max-h-max 2xl:px-[25vw] px-[5vw] py-[10vw] overflow-y-auto">
       {/* Tutorial Title */}
-      <Typography.Title code className="flex justify-center">
-        <span className="text-typography">
-          Computer basics including O.S. basics (Windows 11)
-        </span>
-      </Typography.Title>
-      <br />
-      <br />
-      <br />
-      <br />
+      <TopicTitleSection children="Computer basics including O.S. basics (Windows 11)" />
+
       {/* Video Summary */}
       <VideoSection>
         <iframe
@@ -46,42 +46,27 @@ const Computer: React.FC = (): JSX.Element => {
           allowFullScreen
         />
       </VideoSection>
-      {/* Computer */}
-      <Typography.Title level={3}>
-        <span className="text-typography font-playwriteZA">
-          What is a Computer?
-        </span>
-      </Typography.Title>
 
       <Typography.Paragraph>
-        <Typography.Title keyboard level={4}>
-          <span className="text-typography ">
-            Any device with computational capabilities and which consists of{" "}
-            <span className="font-playwrite text-base">hardware</span> and{" "}
-            <span className="font-playwrite text-base">software</span>{" "}
-            components. Examples include smartphones, laptops, desktops,
-            tablets, and many more day-to-day devices.
-          </span>
-        </Typography.Title>
-        <br />
-        <br />
+        {/* Computer ? */}
+        <QuestionSection children="What is a Computer?" />
+
+        {/* Computer Explanation */}
+        <AnswerSection>
+          Any device with computational capabilities and which consists of{" "}
+          <TextHighlight>hardware</TextHighlight> and{" "}
+          <TextHighlight>software</TextHighlight> components. Examples include
+          smartphones, laptops, desktops, tablets, and many more day-to-day
+          devices.
+        </AnswerSection>
+
         {/* Computer Image */}
-        <div className="flex flex-col justify-center">
-          <Image src={ComComps} alt="Computer Components" width={"45vw"} />
-          <Typography.Title level={4}>
-            <span className="text-typography font-playwrite text-lg">
-              Figure:
-            </span>
-            &nbsp;&nbsp;
-            <span className="text-typography">
-              Computer's two essential components, hardware and software
-            </span>
-          </Typography.Title>
-        </div>
-        <br />
-        <br />
-        <br />
-        <br />
+        <ImageSection
+          ImageSrc={ComComps}
+          alt="Computer Components"
+          caption="Computer's two essential components, hardware and software"
+        />
+
         {/* H/W & S/W */}
         <Typography.Title level={4}>
           <span className="text-typography">
@@ -96,101 +81,55 @@ const Computer: React.FC = (): JSX.Element => {
             </ol>
           </span>
         </Typography.Title>
-        <br />
-        <br />
-        <br />
-        <br />
+        <LineBreaks num={2} />
+
         {/* Hardware */}
-        <Typography.Title level={3}>
-          <span className="text-typography font-playwriteZA">
-            What is hardware?
-          </span>
-        </Typography.Title>
-        <Typography.Title keyboard level={4}>
-          <span className="text-typography">
-            Hardware in simple terms is part of a computer that can be
-            physically touched.
-          </span>
-        </Typography.Title>
-        <br />
-        <br />
+        <QuestionSection children="What is hardware?" />
+        {/* Hardware Explanation */}
+        <AnswerSection>
+          Hardware in simple terms is part of a computer that can be physically
+          touched.
+        </AnswerSection>
+
         {/* Hardware Example */}
-        <Typography.Title level={4}>
-          <span className="text-typography font-playwrite">Examples:</span>
-          <Typography.Title keyboard level={4}>
-            <span className="text-typography">
-              Cabinet, Motherboard, RAM, and Monitor are some examples.
-            </span>
-          </Typography.Title>
-        </Typography.Title>
-        <br />
-        <br />
+        <ExampleSection>
+          Cabinet, Motherboard, RAM, and Monitor are some examples.
+        </ExampleSection>
+
         {/* Hardware Image */}
-        <div className="flex flex-col justify-center">
-          <Image src={Hardware} alt="Computer Hardware" width={"45vw"} />
-          <Typography.Title level={4}>
-            <span className="text-typography font-playwrite text-lg">
-              Figure:
-            </span>
-            &nbsp;&nbsp;
-            <span className="text-typography">
-              Some examples of computer hardware
-            </span>
-          </Typography.Title>
-        </div>
-        <br />
-        <br />
-        <br />
-        <br />
+        <ImageSection
+          ImageSrc={Hardware}
+          alt="Computer Hardware"
+          caption="Some examples of computer hardware"
+        />
+
         {/* Software */}
-        <Typography.Title level={3}>
-          <span className="text-typography font-playwriteZA">
-            What is software?
-          </span>
-        </Typography.Title>
-        <Typography.Title keyboard level={4}>
-          <span className="text-typography">
-            Software is the part of a computer or a computational device that
-            can not be touched but can be seen.
-          </span>
-        </Typography.Title>
-        <br />
-        <br />
+        <QuestionSection children="What is software?" />
+        <AnswerSection>
+          Software is the part of a computer or a computational device that can
+          not be touched but can be seen.
+        </AnswerSection>
+
         {/* Software Example */}
-        <Typography.Title level={4}>
-          <span className="text-typography font-playwrite">Examples:</span>
-          <Typography.Title keyboard level={4}>
-            <span className="text-typography">
-              Windows OS, Mac OS, MS Office, Games, etc.
-            </span>
-          </Typography.Title>
-        </Typography.Title>
-        <br />
-        <br />
+        <ExampleSection>
+          Windows OS, Mac OS, MS Office, Games, etc.
+        </ExampleSection>
+
         {/* Software Image */}
-        <div className="flex flex-col justify-center">
-          <Image src={Software} alt="Computer Software" width={"45vw"} />
-          <Typography.Title level={4}>
-            <span className="text-typography font-playwrite text-lg">
-              Figure:
-            </span>
-            &nbsp;&nbsp;
-            <span className="text-typography">
-              Some examples of computer software
-            </span>
-          </Typography.Title>
-        </div>
-        <br />
-        <br />
+        <ImageSection
+          ImageSrc={Software}
+          alt="Computer Software"
+          caption="Some examples of computer software"
+        />
+
         {/* What's next? */}
-        <Typography.Title keyboard level={4}>
-          <span className="text-typography">
-            Next, we will discuss one such software called an operating system.
-            It's one of the most crucial pieces of software out there and one
-            that I am sure all of you have already come in contact with. That is
-            all for this page, let's meet on the next one.
-          </span>
-        </Typography.Title>
+        <QuestionSection>Coming Up...</QuestionSection>
+        <AnswerSection>
+          Next, we will discuss one such software called an operating system.
+          It's one of the most crucial pieces of software out there and one that
+          I am sure all of you have already come in contact with. That is all
+          for this page, let's meet on the next one.
+        </AnswerSection>
       </Typography.Paragraph>
       <Footer {...props} />
     </div>

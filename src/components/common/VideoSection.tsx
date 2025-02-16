@@ -1,15 +1,13 @@
-type VideoSectionTypes = {
-  children: React.ReactNode;
-};
+import LineBreaks from "./LineBreaks";
+import { SectionNodeProps } from "./types";
 
-const VideoSection: React.FC<VideoSectionTypes> = ({
+const VideoSection: React.FC<SectionNodeProps> = ({
   children,
 }): JSX.Element => {
   return (
     <>
       <div className="flex justify-center items-center">{children}</div>
-      <br />
-      <br />
+      <LineBreaks num={2} />
     </>
   );
 };
