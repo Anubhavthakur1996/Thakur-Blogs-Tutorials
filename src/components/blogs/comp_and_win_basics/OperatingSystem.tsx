@@ -9,6 +9,7 @@ import AnswerSection from "../../common/AnswerSection";
 import ExampleSection from "../../common/ExampleSection";
 import ImageSection from "../../common/ImageSection";
 import ListSection from "../../common/ListSection";
+import LineBreaks from "../../common/LineBreaks";
 
 const OperatingSystem: React.FC = (): JSX.Element => {
   const nav = useNavigate();
@@ -127,6 +128,8 @@ const OperatingSystem: React.FC = (): JSX.Element => {
           light understanding of the topip before moving forward. That'll be all
           for this topic, and i'll see you on next page.
         </AnswerSection>
+
+        {/* Read more */}
         <Typography.Link
           target="_blank"
           href="https://www.geeksforgeeks.org/types-of-operating-systems/"
@@ -134,8 +137,7 @@ const OperatingSystem: React.FC = (): JSX.Element => {
           Read about operating systems in more details
         </Typography.Link>
 
-        <br />
-        <br />
+        <LineBreaks num={2} />
       </Typography.Paragraph>
       <Footer {...props} />
     </div>

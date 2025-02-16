@@ -4,6 +4,14 @@ import UserInt from "../../../assets/UI.png";
 import CLI from "../../../assets/cli gif.gif";
 import GUI from "../../../assets/gui gif.gif";
 import Footer from "../../common/Footer";
+import TopicTitleSection from "../../common/TopicTitleSection";
+import QuestionSection from "../../common/QuestionSection";
+import AnswerSection from "../../common/AnswerSection";
+import LineBreaks from "../../common/LineBreaks";
+import ImageSection from "../../common/ImageSection";
+import ListSection from "../../common/ListSection";
+import ExampleSection from "../../common/ExampleSection";
+import TextHighlight from "../../common/TextHighlight";
 
 const UI: React.FC = (): JSX.Element => {
   const nav = useNavigate();
@@ -32,204 +40,112 @@ const UI: React.FC = (): JSX.Element => {
   return (
     <div className="max-w-screen min-h-screen max-h-max 2xl:px-[25vw] px-[5vw] py-[10vw] overflow-y-auto">
       {/* Tutorial Title */}
-      <Typography.Title code className="flex justify-center">
-        <span className="text-typography">
-          Computer basics including O.S. basics (Windows 11)
-        </span>
-      </Typography.Title>
-      <br />
-      <br />
-      <br />
-      <br />
-      {/* User Interface */}
-      <Typography.Title level={3}>
-        <span className="text-typography font-playwriteZA">
-          User interface?
-        </span>
-      </Typography.Title>
+      {/* Tutorial Title */}
+      <TopicTitleSection>
+        Computer basics including O.S. basics (Windows 11)
+      </TopicTitleSection>
 
       <Typography.Paragraph>
-        <Typography.Title keyboard level={4}>
-          <span className="text-typography ">
-            Based on the name, we can deduce that a user interface is a bridge
-            between the user and something. In the computer's context, a user
-            interface is a bridge between the user and the computer. <br />
-            <br />
-            You must be asking, what do you mean by a bridge? And why do you
-            need a bridge between the user and the computer? <br />
-            The answer is to provide means to take the user's inputs and give
-            them to the computer and take the output from the computer and
-            deliver it to the user.
-          </span>
-        </Typography.Title>
-        <br />
-        <br />
+        {/* User Interface */}
+        <QuestionSection>User interface?</QuestionSection>
+
+        {/* Ui Explanation */}
+        <AnswerSection>
+          Based on the name, we can deduce that a user interface is a bridge
+          between the user and something. In the computer's context, a user
+          interface is a bridge between the user and the computer.{" "}
+          <LineBreaks num={2} />
+          You must be asking, what do you mean by a bridge? And why do you need
+          a bridge between the user and the computer? <LineBreaks num={1} />
+          The answer is to provide means to take the user's inputs and give them
+          to the computer and take the output from the computer and deliver it
+          to the user.
+        </AnswerSection>
 
         {/* UI Image */}
-        <div className="flex flex-col justify-center">
-          <Image src={UserInt} alt="User Interface" width={"45vw"} />
-          <Typography.Title level={4}>
-            <span className="text-typography font-playwrite">Figure:</span>
-            &nbsp;&nbsp;
-            <span className="text-typography">User interface designs</span>
-          </Typography.Title>
-        </div>
-        <br />
-        <br />
-        <br />
-        <br />
+        <ImageSection
+          ImageSrc={UserInt}
+          alt="User Interface"
+          caption="User interface designs"
+        />
+
         {/* CLI & GUI*/}
-        <Typography.Title level={4}>
-          <span className="text-typography">
-            There are two primary types of user interfaces:
-            <ol>
-              <li>
-                <span className="font-playwrite text-base">
-                  Command Line Interface (CLI).
-                </span>
-              </li>
-              <li>
-                <span className="font-playwrite text-base">
-                  Graphical User Interface (GUI).
-                </span>
-              </li>
-            </ol>
-          </span>
-        </Typography.Title>
-        <br />
-        <br />
-        <br />
-        <br />
+        <ListSection
+          title="There are two primary types of user interfaces:"
+          items={[
+            "Command Line Interface (CLI).",
+            "Graphical User Interface (GUI).",
+          ]}
+        />
+
         {/* CLI */}
-        <Typography.Title level={3}>
-          <span className="text-typography font-playwrite">
-            1) Command Line Interface (CLI):
-          </span>
-        </Typography.Title>
-        <Typography.Title keyboard level={4}>
-          <span className="text-typography">
-            A command line interface is one where the user interacts with the
-            computer through commands hence, the name command line interface.
-            When using a command line interface user, inputs commands using a
-            keyboard into a{" "}
-            <span className="font-playwrite text-base">shell</span>, and based
-            on the commands entered, the computer displays output on the
-            monitor.
-          </span>
-        </Typography.Title>
+        <QuestionSection>1) Command Line Interface (CLI):</QuestionSection>
+        <AnswerSection>
+          A command line interface is one where the user interacts with the
+          computer through commands hence, the name command line interface. When
+          using a command line interface user, inputs commands using a keyboard
+          into a <span className="font-playwrite text-base">shell</span>, and
+          based on the commands entered, the computer displays output on the
+          monitor.
+        </AnswerSection>
+
         {/* CLI Examples */}
-        <Typography.Title level={4}>
-          <span className="text-typography font-playwrite">Examples:</span>
-          <Typography.Title keyboard level={4}>
-            <span className="text-typography">
-              DOS is an example of an OS that uses CLI, Windows command prompt
-              (cmd) is a CLI, Linux bash is a CLI and there are many more.
-            </span>
-          </Typography.Title>
-        </Typography.Title>
-        <br />
-        <br />
+        <ExampleSection>
+          DOS is an example of an OS that uses CLI, Windows command prompt (cmd)
+          is a CLI, Linux bash is a CLI and there are many more.
+        </ExampleSection>
 
         {/* CLI Image */}
-        <div className="flex flex-col justify-center">
-          <Image src={CLI} alt="Command Line Interface" width={"45vw"} />
-          <Typography.Title level={4}>
-            <span className="text-typography font-playwrite text-lg">
-              Figure:
-            </span>
-            &nbsp;&nbsp;
-            <span className="text-typography">A coomand line interface</span>
-          </Typography.Title>
-        </div>
-        <br />
-        <br />
-        <br />
-        <br />
+        <ImageSection
+          ImageSrc={CLI}
+          alt="Command Line Interface"
+          caption="A coomand line interface"
+        />
+
         {/* GUI */}
-        <Typography.Title level={3}>
-          <span className="text-typography font-playwrite">
-            2) Graphical User Interface (GUI):
-          </span>
-        </Typography.Title>
-        <Typography.Title keyboard level={4}>
-          <span className="text-typography">
-            A graphical user interface is one where the user interacts with the
-            computer using visuals, graphics, and a wide variety of means not
-            just commands. The user may click on things, drag and drop them,
-            double-click them, and do a lot more than just write commands into a
-            shell.
-          </span>
-        </Typography.Title>
+        <QuestionSection>2) Graphical User Interface (GUI):</QuestionSection>
+        <AnswerSection>
+          A graphical user interface is one where the user interacts with the
+          computer using visuals, graphics, and a wide variety of means not just
+          commands. The user may click on things, drag and drop them,
+          double-click them, and do a lot more than just write commands into a
+          shell.
+        </AnswerSection>
+
         {/* GUI Examples */}
-        <Typography.Title level={4}>
-          <span className="text-typography font-playwrite">Examples:</span>
-          <Typography.Title keyboard level={4}>
-            <span className="text-typography">
-              Windows OS interface, Mac OS interface, and Ubuntu OS interface
-              are some examples.
-            </span>
-          </Typography.Title>
-        </Typography.Title>
+        <ExampleSection>
+          Windows OS interface, Mac OS interface, and Ubuntu OS interface are
+          some examples.
+        </ExampleSection>
+
         {/* GUI Image */}
-        <br />
-        <br />
+        <ImageSection
+          ImageSrc={GUI}
+          alt="Graphical User Interface"
+          caption="A graphical user interface"
+        />
 
-        <div className="flex flex-col justify-center">
-          <Image src={GUI} alt="Graphical User Interface" width={"45vw"} />
-          <Typography.Title level={4}>
-            <span className="text-typography font-playwrite">Figure:</span>
-            &nbsp;&nbsp;
-            <span className="text-typography">A graphical user interface</span>
-          </Typography.Title>
-        </div>
-        <br />
-        <br />
-        <br />
-        <br />
+        {/* Shell */}
+        <QuestionSection>Shell?</QuestionSection>
+        <AnswerSection>
+          We talked about <TextHighlight>shell</TextHighlight> while readin
+          about CLI. Since, then you might be wondering what kind of a new pain
+          is this? So to fix that, let me give it to you in plain words. A{" "}
+          <TextHighlight>shell</TextHighlight> is a plain text like interface.
+          By now you should know what an interface is but if you still need to
+          know more, you can do some personal research or let me know through
+          comments on my video and I'll make a seperate article and video about
+          it.
+        </AnswerSection>
 
-        {/* Common Terms */}
-        <Typography.Title level={4}>
-          <span className="text-typography">
-            Some terms that we have already touched or will touch in the future:
-            <ol>
-              <li>
-                <span className="font-playwrite text-base">Shell.</span>
-              </li>
-              <li>
-                <span className="font-playwrite text-base">Start.</span>
-              </li>
-              <li>
-                <span className="font-playwrite text-base">Start menu.</span>
-              </li>
-              <li>
-                <span className="font-playwrite text-base">Task bar.</span>
-              </li>
-              <li>
-                <span className="font-playwrite text-base">Address bar.</span>
-              </li>
-            </ol>
-          </span>
-        </Typography.Title>
-
-        <Typography.Title keyboard level={4}>
-          <span className="text-typography">
-            We will discuss them in enough detail, but you can look them up
-            yourself, think of it as a small assignment.
-          </span>
-        </Typography.Title>
-
-        <br />
-        <br />
-
-        {/* <Typography.Link
-          target="_blank"
-          href="https://www.geeksforgeeks.org/types-of-operating-systems/"
-        >
-          Read about operating systems in more details
-        </Typography.Link> */}
-
-        <br />
-        <br />
+        {/* Next  */}
+        <QuestionSection>Coming Up...</QuestionSection>
+        <AnswerSection>
+          Next, we will move on to windows 11, our main focus of this whole
+          series. We will now what a winows OS is and what are it's main
+          components. As, always, you can do some homework and look it up before
+          moving forward but we'll stop here for now. See you on the next page.
+        </AnswerSection>
       </Typography.Paragraph>
       <Footer {...props} />
     </div>
