@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router";
-import { Typography, Image, Button } from "antd";
+import { Typography, Button } from "antd";
 import ComComps from "../../../assets/Computer Comps.png";
 import Hardware from "../../../assets/hardware.jpg";
 import Software from "../../../assets/software.png";
@@ -10,8 +10,8 @@ import QuestionSection from "../../common/QuestionSection";
 import AnswerSection from "../../common/AnswerSection";
 import TextHighlight from "../../common/TextHighlight";
 import ImageSection from "../../common/ImageSection";
-import LineBreaks from "../../common/LineBreaks";
 import ExampleSection from "../../common/ExampleSection";
+import ListSection from "../../common/ListSection";
 
 const Computer: React.FC = (): JSX.Element => {
   const nav = useNavigate();
@@ -68,20 +68,10 @@ const Computer: React.FC = (): JSX.Element => {
         />
 
         {/* H/W & S/W */}
-        <Typography.Title level={4}>
-          <span className="text-typography">
-            We touched upon two crucial components of a computer and those were:
-            <ol>
-              <li>
-                <span className="font-playwrite text-lg">Hardware</span>
-              </li>
-              <li>
-                <span className="font-playwrite text-lg">Software</span>
-              </li>
-            </ol>
-          </span>
-        </Typography.Title>
-        <LineBreaks num={2} />
+        <ListSection
+          title="We touched upon two crucial components of a computer and those were:"
+          items={["Hardware", "Software"]}
+        />
 
         {/* Hardware */}
         <QuestionSection children="What is hardware?" />

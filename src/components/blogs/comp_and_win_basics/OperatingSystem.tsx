@@ -3,6 +3,12 @@ import { Typography, Image, Button } from "antd";
 import OS from "../../../assets/os.png";
 import Footer from "../../common/Footer";
 import VideoSection from "../../common/VideoSection";
+import TopicTitleSection from "../../common/TopicTitleSection";
+import QuestionSection from "../../common/QuestionSection";
+import AnswerSection from "../../common/AnswerSection";
+import ExampleSection from "../../common/ExampleSection";
+import ImageSection from "../../common/ImageSection";
+import ListSection from "../../common/ListSection";
 
 const OperatingSystem: React.FC = (): JSX.Element => {
   const nav = useNavigate();
@@ -31,15 +37,10 @@ const OperatingSystem: React.FC = (): JSX.Element => {
   return (
     <div className="max-w-screen min-h-screen max-h-max 2xl:px-[25vw] px-[5vw] py-[10vw] overflow-y-auto">
       {/* Tutorial Title */}
-      <Typography.Title code className="flex justify-center">
-        <span className="text-typography">
-          Computer basics including O.S. basics (Windows 11)
-        </span>
-      </Typography.Title>
-      <br />
-      <br />
-      <br />
-      <br />
+      <TopicTitleSection>
+        Computer basics including O.S. basics (Windows 11)
+      </TopicTitleSection>
+
       {/* Video Summary */}
       <VideoSection>
         <iframe
@@ -52,120 +53,80 @@ const OperatingSystem: React.FC = (): JSX.Element => {
           allowFullScreen
         />
       </VideoSection>
-      {/* Operating System */}
-      <Typography.Title level={3}>
-        <span className="text-typography font-playwriteZA">
-          What the heck is an Operating System?
-        </span>
-      </Typography.Title>
 
       <Typography.Paragraph>
-        <Typography.Title keyboard level={4}>
-          <span className="text-typography ">
-            If we interpret the name itself, we can deduce that anything that
-            operates a system is an Operating system. In the context of
-            computers, an Operating System is software that manages a set piece
-            of hardware; in the case of personal computers, it is responsible
-            for making computer hardware operational.
-          </span>
-        </Typography.Title>
+        {/* Operating System */}
+        <QuestionSection>What the heck is an Operating System?</QuestionSection>
+
+        {/* OS Exaplanation */}
+        <AnswerSection>
+          If we interpret the name itself, we can deduce that anything that
+          operates a system is an Operating system. In the context of computers,
+          an Operating System is software that manages a set piece of hardware;
+          in the case of personal computers, it is responsible for making
+          computer hardware operational.
+        </AnswerSection>
+
         {/* OS Examples */}
-        <Typography.Title level={4}>
-          <span className="text-typography font-playwrite">Examples:</span>
-          <Typography.Title keyboard level={4}>
-            <span className="text-typography">
-              Windows, MacOS, Android, and IOS are some examples.
-            </span>
-          </Typography.Title>
-        </Typography.Title>
-        <br />
-        <br />
-        {/* Computer Image */}
-        <div className="flex flex-col justify-center">
-          <Image src={OS} alt="Operating Systems" width={"45vw"} />
-          <Typography.Title level={4}>
-            <span className="text-typography font-playwrite text-lg">
-              Figure:
-            </span>
-            &nbsp;&nbsp;
-            <span className="text-typography">
-              Some popular operating systems
-            </span>
-          </Typography.Title>
-        </div>
-        <br />
-        <br />
-        <br />
-        <br />
-        {/* H/W & S/W */}
-        <Typography.Title level={4}>
-          <span className="text-typography">
-            There are many types of operating systems:
-            <ol>
-              <li>
-                <span className="font-playwrite text-base">Batch OS</span>
-              </li>
-              <li>
-                <span className="font-playwrite text-base">
-                  Multi-programming OS
-                </span>
-              </li>
-              <li>
-                <span className="font-playwrite text-base">
-                  Multi-tasking/Time sharing OS
-                </span>
-              </li>
-              <li>
-                <span className="font-playwrite text-base">
-                  Multi-processing OS
-                </span>
-              </li>
-              <li>
-                <span className="font-playwrite text-base">Multi-user OS</span>
-              </li>
-              <li>
-                <span className="font-playwrite text-base">Distributed OS</span>
-              </li>
-              <li>
-                <span className="font-playwrite text-base">Network OS</span>
-              </li>
-              <li>
-                <span className="font-playwrite text-base">Real time OS</span>
-              </li>
-              <li>
-                <span className="font-playwrite text-base">Mobile OS</span>
-              </li>
-            </ol>
-          </span>
-        </Typography.Title>
-        <br />
-        <br />
-        <br />
-        <br />
-        {/* Hardware */}
-        <Typography.Title keyboard level={4}>
-          <span className="text-typography">
-            Modern operating systems are usually a hybrid combination of
-            multi-programming, multitasking, multi-processing, and multi-user
-            operating systems. It can be inferred because modern operating
-            systems like Windows or Mac have capabilities of the aforementioned
-            operating systems.
-          </span>
-        </Typography.Title>
-        <Typography.Title keyboard level={4}>
-          <span className="text-typography">
-            We will only focus on the Windows operating system as this tutorial
-            was made for people who want to get a somewhat advanced
-            understanding of the core features of operating systems and want to
-            move into tech and programming. We will also touch upon NOS and
-            mobile operating systems as their basic understanding is crucial to
-            walk the path of modern tech and development.
-          </span>
-        </Typography.Title>
+        <ExampleSection>
+          Windows, MacOS, Android, and IOS are some examples.
+        </ExampleSection>
 
-        <br />
-        <br />
+        {/* OS Image */}
+        <ImageSection
+          ImageSrc={OS}
+          alt="Operating Systems"
+          caption="Some popular operating systems"
+        />
 
+        {/* OS Types */}
+        <ListSection
+          title="There are many types of operating systems:"
+          items={[
+            "Batch OS",
+            "Multi-programming OS",
+            "Multi-tasking/Time sharing OS",
+            "Multi-processing OS",
+            "Multi-user OS",
+            "Distributed OS",
+            "Network OS",
+            "Real time OS",
+            "Mobile OS",
+          ]}
+        />
+
+        {/* Modern OS */}
+
+        <QuestionSection>Moderm Operating Systems:</QuestionSection>
+
+        <AnswerSection>
+          Modern operating systems are usually a hybrid combination of
+          multi-programming, multitasking, multi-processing, and multi-user
+          operating systems. It can be inferred because modern operating systems
+          like Windows or Mac have capabilities of the aforementioned operating
+          systems.
+        </AnswerSection>
+
+        {/* Our Focus */}
+        <QuestionSection>Our Focus?</QuestionSection>
+        <AnswerSection>
+          We will only focus on the Windows operating system as this tutorial
+          was made for people who want to get a somewhat advanced understanding
+          of the core features of operating systems and want to move into tech
+          and programming. We will also touch upon NOS and mobile operating
+          systems as their basic understanding is crucial to walk the path of
+          modern tech and development.
+        </AnswerSection>
+
+        {/* Next  */}
+        <QuestionSection>Coming Up...</QuestionSection>
+        <AnswerSection>
+          Next, we will focus on interfaces and how we can get things done via
+          computers. To use a computational device we need a mediium and that's
+          what interfaces are. You can look it up on the internet to have a
+          light understanding of the topip before moving forward. That'll be all
+          for this topic, and i'll see you on next page.
+        </AnswerSection>
         <Typography.Link
           target="_blank"
           href="https://www.geeksforgeeks.org/types-of-operating-systems/"
