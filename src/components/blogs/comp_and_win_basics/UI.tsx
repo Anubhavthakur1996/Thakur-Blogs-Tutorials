@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router";
-import { Typography, Image, Button } from "antd";
+import { Typography, Button } from "antd";
 import UserInt from "../../../assets/UI.png";
 import CLI from "../../../assets/cli gif.gif";
 import GUI from "../../../assets/gui gif.gif";
