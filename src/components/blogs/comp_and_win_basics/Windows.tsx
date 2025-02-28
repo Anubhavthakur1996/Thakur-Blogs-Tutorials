@@ -134,7 +134,8 @@ const Windows: React.FC = (): JSX.Element => {
 
         {/* File explorer explanation */}
         <AnswerSection>
-          
+          The software that is used to store, access and manage files in the
+          Windows OS is called <TextHighlight>file explorer.</TextHighlight>
         </AnswerSection>
       </Typography.Paragraph>
 
