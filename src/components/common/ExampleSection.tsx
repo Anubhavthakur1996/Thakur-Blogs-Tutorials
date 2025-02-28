@@ -9,7 +9,7 @@ const ExampleSection: React.FC<SectionNodeProps> = ({
     <>
       <Typography.Title level={4}>
         <span className="text-typography font-playwrite">Examples:</span>
-        <Typography.Title keyboard level={4}>
+        <Typography.Title level={4}>
           <span className="text-typography">{children}</span>
         </Typography.Title>
       </Typography.Title>

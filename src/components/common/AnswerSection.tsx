@@ -7,7 +7,7 @@ const AnswerSection: React.FC<SectionNodeProps> = ({
 }): JSX.Element => {
   return (
     <>
-      <Typography.Title keyboard level={4}>
+      <Typography.Title level={4}>
         <span className="text-typography ">{children}</span>
       </Typography.Title>
       <LineBreaks num={2} />

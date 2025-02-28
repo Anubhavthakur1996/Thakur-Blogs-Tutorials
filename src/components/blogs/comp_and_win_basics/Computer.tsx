@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router";
 import { Typography, Button } from "antd";
-import ComComps from "../../../assets/Computer Comps.png";
-import Hardware from "../../../assets/hardware.jpg";
-import Software from "../../../assets/software.png";
+import ComComps from "../../../assets/Computer/Computer Comps.png";
+import Hardware from "../../../assets/Computer/hardware.jpg";
+import Software from "../../../assets/Computer/software.png";
 import Footer from "../../common/Footer";
 import VideoSection from "../../common/VideoSection";
 import TopicTitleSection from "../../common/TopicTitleSection";

@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router";
 import { Typography, Button } from "antd";
-import UserInt from "../../../assets/UI.png";
-import CLI from "../../../assets/cli gif.gif";
-import GUI from "../../../assets/gui gif.gif";
+import UserInt from "../../../assets/UI/UI.png";
+import CLI from "../../../assets/Gifs/UI/cli gif.gif";
+import GUI from "../../../assets/Gifs/UI/gui gif.gif";
 import Footer from "../../common/Footer";
 import TopicTitleSection from "../../common/TopicTitleSection";
 import QuestionSection from "../../common/QuestionSection";
@@ -39,7 +39,6 @@ const UI: React.FC = (): JSX.Element => {
 
   return (
     <div className="max-w-screen min-h-screen max-h-max 2xl:px-[25vw] px-[5vw] py-[10vw] overflow-y-auto">
-      {/* Tutorial Title */}
       {/* Tutorial Title */}
       <TopicTitleSection>
         Computer basics including O.S. basics (Windows 11)

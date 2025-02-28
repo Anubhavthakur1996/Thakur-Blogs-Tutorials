@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router";
 import { Typography, Button } from "antd";
-import OS from "../../../assets/os.png";
+import OS from "../../../assets/OS/os.png";
 import Footer from "../../common/Footer";
 import VideoSection from "../../common/VideoSection";
 import TopicTitleSection from "../../common/TopicTitleSection";
